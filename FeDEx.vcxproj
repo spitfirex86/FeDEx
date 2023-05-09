@@ -140,12 +140,19 @@
     <ClInclude Include="fedex.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="perf.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="stage.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fedex.ini">
       <DeploymentContent>false</DeploymentContent>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fedex.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="fedexicon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
