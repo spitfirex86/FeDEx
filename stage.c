@@ -147,7 +147,8 @@ int fn_lParseStageCfg( tdstStage *pStage )
 
 int fn_lPreRunStage( tdstStage *pStage )
 {
-	if ( GetFileAttributesA(pStage->szTo) == INVALID_FILE_ATTRIBUTES
+	if ( pStage->d_szFiles
+		&& GetFileAttributesA(pStage->szTo) == INVALID_FILE_ATTRIBUTES
 		&& !CreateDirectoryA(pStage->szTo, NULL) )
 	{
 		M_VerbosePrintf("LastError: %lu\n", GetLastError());
