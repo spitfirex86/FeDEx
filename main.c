@@ -12,8 +12,11 @@ bool g_bVerbose = FALSE;
 
 void fn_vPrintVersionInfo( void )
 {
-	printf("FeDEx - Fetch that Damn Executable, Version %s [%s]\n\n",
-		   C_szVersion, C_szDate);
+	printf(
+		"FeDEx - Fetch that Damn Executable, Version %s [%s]\n"
+		"(c) 2023 Spitfire_x86\n\n",
+		C_szVersion, C_szDate
+	);
 }
 
 void fn_vPrintUsage( void )

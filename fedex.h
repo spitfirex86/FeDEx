@@ -1,7 +1,7 @@
 #pragma once
 
 
-#define C_szVersion		"1.0.0"
+#define C_szVersion		"1.0.1"
 #define C_szDate		__DATE__
 
 
